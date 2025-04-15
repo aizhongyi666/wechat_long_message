@@ -52,6 +52,15 @@
             font-size: 16px;
         }
     </style>
+    <script>
+	    (function(){
+	        let meta = document.createElement('meta');
+	        meta.content = 'no-referrer';
+	        meta.name = 'referrer';
+	        document.getElementsByTagName('head')[0].appendChild(meta);
+	        console.log(document.getElementsByTagName('head'))
+	    })()
+	</script>
 </head>
 <body>
     <div class="weui-desktop-person_info">
